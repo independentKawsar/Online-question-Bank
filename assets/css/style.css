@@ -193,6 +193,22 @@
       animation-timing-function: linear;
       animation-iteration-count: 1;
     }
+
+    .btn-default-unactive
+    {
+      color: #fff;
+      vertical-align: middle;
+      display: inline-block;
+      background-color: rgb(99, 99, 99);
+      transform: perspective(1px) translateZ(0);
+    }
+    /* .btn-default-unactive:hover
+    {
+      animation-name: button-push;
+      animation-duration: 0.3s;
+      animation-timing-function: linear;
+      animation-iteration-count: 1;
+    } */
     
     /*========== Header ==========*/
     .header
@@ -656,6 +672,86 @@
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
+    /*========== Question papers ==========*/
+.qps
+{
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+
+.qps:nth-child(1)
+{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.qps:nth-child(2)
+{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.qps:nth-child(3)
+{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.qp-item
+{
+  padding: var(--card-padding);
+  background-color: var(--color-white);
+  text-align: center;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+.qp-item h3.plan
+{
+  margin: var(--m-0-75) 0;
+}
+.qps p
+{
+  margin-bottom: 1rem;
+}
+.qp-item .qp 
+{
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+}
+.qp-item .qp em
+{
+  font-style: normal;
+  font-size: var(--small-font-size);
+  margin-right: var(--m-0-5);
+  vertical-align: super;
+}
+.qp-item .qp span
+{
+  font-size: var(--normal-font-size);
+  margin-left: var(--m-0-75);
+}
+.qp-item .btn
+{
+  margin-top: var(--m-1);
+}
+.qp-item.best
+{
+  z-index: 1;
+  position: relative;
+}
+.qp-item .badge
+{
+  position: absolute;
+  left: 0;
+  top: 2.5rem;
+  color: #fff;
+  background-color: var(--color-primary);
+  transform: rotate(-45deg);
+  padding: 0.4rem 0.75rem;
+  font-size: var(--small-font-size);
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
     /*========== Portfolio ==========*/
     .portfolio .portfolio-filter
     {
@@ -1000,7 +1096,7 @@
       height: 100%;
       padding: 1rem 1rem 1rem 0;
       background: none;
-      color: #fff;
+      color: rgb(53, 53, 53);
       outline: none;
       border: none;
       z-index: 1;
@@ -1235,6 +1331,34 @@
       {
         padding-left: 15px;
       }
+      .qps,
+      .services .service-item
+      {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: var(--m-2-5);
+      }
+      .qp-item.best 
+      {
+        padding: var(--card-padding);
+      }
+      .qps:nth-child(odd)
+      {
+        margin-top: 0;
+      }
+      .qps:nth-child(1)
+      {
+        padding-right: 15px;
+      }
+      .qps:nth-child(2)
+      {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+      .qps:nth-child(3)
+      {
+        padding-left: 15px;
+      }
       .customize-theme .card
       {
         width: 58vw;
@@ -1285,6 +1409,7 @@
       .contact-data,
       .contact-form,
       .prices,
+      .qps,
       .education,
       .experience,
       .services .service-item,
