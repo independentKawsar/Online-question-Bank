@@ -188,6 +188,7 @@
     }
     .btn-default:hover
     {
+      
       animation-name: button-push;
       animation-duration: 0.3s;
       animation-timing-function: linear;
@@ -1477,4 +1478,4 @@
         flex: 0 0 100%;
         max-width: 100%;
       }
-}
+    }
