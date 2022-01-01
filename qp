@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== LINE ICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Question Bank</title>
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <!-- nav -->
+        <nav class="nav container padd-15">
+            <!-- nav logo -->
+            <a href="#" class="nav-logo">
+                <h3><img src="assets/img/logo.png" width="40px" height="40px"  alt="Question Bnak logo"> Question bank</h3>
+            </a>
+            <!-- nav menu -->
+            <div class="nav-menu" id="nav-menu">
+                <!-- nav list -->
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#download" class="nav-link">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About MD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <!-- nav close -->
+                <div class="nav-close" id="nav-close">
+                    <i class="lni lni-close"></i>
+                </div>
+            </div>
+            <!-- nav btn -->
+            <div class="nav-btns">
+                <!-- theme change btn -->
+                <i class="lni lni-pallet change-theme" id="theme-button"></i>
+                <!-- toggle btn -->
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="lni lni-grid-alt"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main-content">
+        <!--=============== HOME ===============-->
+        <section class="home" id="home">
+            <div class="container">
+                <!-- intro -->
+                <div class="intro">
+                    <!-- avatar image -->
+                    <img src="assets/img/logo.png" width="120px" height="120px"  alt="Question Bnak logo">
+                    <!-- info -->
+                    <h1>Question Bank</h1>
+                    <span>World largest <span class="info-text">Question Bank</span> Provider</span>
+                    <!-- social icons -->
+                    <ul class="social-icons">
+                        <li><a href="https://www.instagram.com/kawsarahmed2000"><i class="lni lni-instagram-original"></i></a></li>
+                        <li><a href="https://www.twitter.com/kawsarahmed2000"><i class="lni lni-twitter-original"></i></a></li>
+                        <li><a href="https://www.facebook.com/kawsarahmed2021"><i class="lni lni-facebook-original"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/kawsarahmed2000/"><i class="lni lni-linkedin-original"></i></a></li>
+                        <li><a href="https://in.pinterest.com/kawsarahmed2021"><i class="lni lni-pinterest"></i></a></li>
+                    </ul>
+                    <!-- button -->
+                    <div>
+                        <a href="https://play.google.com/store/apps/details?id=com.QB2NDyear.kawsar.assam" class="btn btn-default">OUR app</a>
+                    </div>
+                    <!-- scroll down mouse wheel -->
+                    <div class="scroll-down">
+                        <a href="#download" class="mouse-wrapper">
+                            <span>Scroll Down</span>
+                            <span class="mouse">
+                                <span class="wheel"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Download Section-->
+        <section class="section pricing" id="download">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">Question papers</h2>
+                <div class="row">
+                    <!-- qps -->
+                    <div class="qps">
+                        <div class="qp-item">
+                            <img src="assets/img/class x.png" width="70px" height="81px" alt="">
+                            <h3 class="plan">Class X Question papers</h3>
+                            <p>If you are looking for Class X question papers, don't worry you will be satisfied here.</p>
+                            <h3 class="qp">90% available</h3>
+                            <a class="btn btn-default" id="classx">Download Now</a>
+                        </div>
+                    </div>
+                     <!-- qps -->
+                     <div class="qps">
+                        <div class="qp-item">
+                            <img src="assets/img/class xii.png" width="70px" height="71px" alt="">
+                            <h3 class="plan">Class XII Question papers</h3>
+                            <p>Almost all question papers are available for the stream Science, Arts and Commerce</p>
+                            <h3 class="qp">95% available</h3>
+                            <a href="#" class="btn btn-default">Downlaod Now</a>
+                        </div>
+                    </div>
+                     <!-- qps -->
+                     <div class="qps">
+                        <div class="qp-item best">
+                            <span class="badge">Available soon</span>
+                            <img src="assets/img/degree.png" alt="" width="70px" height="71px">
+                            <h3 class="plan">Degree Question papers</h3>
+                            <p>Question papers of degree will available soon. Working is on full jush</p>
+                            <h3 class="qp">Comming soon</h3>
+                            <a class="btn btn-default-unactive">Download Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!--End of Download section-->
+      
+        <!--=============== About ===============-->
+        <section class="about section" id="about">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">About MD</h2>
+                <div class="row">
+                    <div class="about-img padd-15">
+                        <!-- avatar img -->
+                        <img src="assets/img/kawsar ahmed.png"width="150px" height="150px" viewBox="0 0 150 150" alt="">
+                    </div>
+                    <div class="about-content padd-15">
+                        <div class="rounded">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <!-- about text -->
+                                    <p>I am Kawsar Ahmed, android developer from Assam, INDIA. I have rich experience in android design and building and customization, also I am good at Web developement.</p>
+                                    <div>
+                                        <a href="#" class="btn btn-default">Download CV</a>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <!-- skill item -->
+                                        <div class="skill-item">
+                                            <h4>Android</h4>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 95%; background: rgb(166, 56, 255);"></div>
+                                                <div class="skill-percent">90%</div>
+                                            </div>
+                                        </div>
+                                        <!-- skill item -->
+                                        <div class="skill-item">
+                                            <h4>Web developement</h4>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 65%; background: rgb(255,76,96);"></div>
+                                                <div class="skill-percent">75%</div>
+                                            </div>
+                                        </div>
+                                        <!-- skill item -->
+                                        <div class="skill-item">
+                                            <h4>UI/UX design</h4>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 85%; background: rgb(108,108,229);"></div>
+                                                <div class="skill-percent">85%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <!-- fact item -->
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-thumbs-up"></i>
+                        <div class="details">
+                            <h3>10+</h3>
+                            <p>Project done</p>
+                        </div>
+                    </div>
+                    <!-- fact item -->
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-coffee-cup"></i>
+                        <div class="details">
+                            <h3>124+</h3>
+                            <p>Cup of coffee</p>
+                        </div>
+                    </div>
+                    <!-- fact item -->
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-users"></i>
+                        <div class="details">
+                            <h3>10+</h3>
+                            <p>Satisfied clients</p>
+                        </div>
+                    </div>
+                    <!-- fact item -->
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-cup"></i>
+                        <div class="details">
+                            <h3>4</h3>
+                            <p>Nominiees winner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== Contact ===============-->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">Contact us</h2>
+                <div class="row">
+                    <!-- contact box -->
+                    <div class="contact-box padd-15">
+                        <div class="contact-data">
+                            <!-- contact information -->
+                            <div class="contact-information">
+                                <h3 class="contact-subtitle">Call us for instant support</h3>
+                                <span class="contact-description" >
+                                    <i class="lni lni-phone contact-icon"></i>
+                                    <a href="tel:9864933180">+91 98649 33180</a>
+                                </span>
+                            </div>
+                             <!-- contact information -->
+                             <div class="contact-information">
+                                <h3 class="contact-subtitle">Write us by mail</h3>
+                                <span class="contact-description">
+                                    <i class="lni lni-user contact-icon"></i>
+                                    info@gmail.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- contact form -->
+                    <form action="" class="contact-form padd-15">
+                        <div class="contact-inputs">
+                            <!-- contact content -->
+                            <div class="contact-content">
+                                <input type="email" class="contact-input">
+                                <label for="" class="contact-label">Email</label>
+                                <span></span>
+                            </div>
+                            <!-- contact content -->
+                            <div class="contact-content">
+                                <input type="text" class="contact-input">
+                                <label for="" class="contact-label">Subject</label>
+                                <span></span>
+                            </div>
+                            <!-- contact content -->
+                            <div class="contact-content contact-area">
+                                <textarea name="" id="" cols="30" rows="10" class="contact-input"></textarea>
+                                <label for="" class="contact-label">Message</label>
+                                <span></span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-default">Send Message</a>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--=============== Footer ===============-->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-text padd-15">
+                    <p>&copy; Online question bank</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!--=============== Theme Customize ===============-->
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize your view</h2>
+            <p>Manage your font size, color, and background</p>
+            <!-- font size -->
+            <div class="font-size">
+                <h3>Font Size</h3>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2"></span>
+                        <span class="font-size-3 active"></span>
+                        <span class="font-size-4"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+            <!-- color -->
+            <div class="color">
+                <h3>Color</h3>
+                <div class="choose-color">
+                    <span class="color-1"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3 active"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+            <!-- background -->
+            <div class="background">
+                <h3>background</h3>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="bg-1">Light</h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5 for="bg-2">Dim</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">Dark</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--=============== jQuery ===============-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        window.addEventListener("popstate",detectHistory);
+        $(document).ready(function(){
+            $('#classx').click(function(){
+                $('#download').hide();
+                window.history.pushState({id:1}, null, "?q=432&u=selectSubject");
+            });
+        });
+
+        function detectHistory(){
+            $('#download').show();
+        }
+    </script>
+
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    
+    <!--=============== JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
