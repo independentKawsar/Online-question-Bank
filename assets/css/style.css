@@ -13,7 +13,7 @@
     --white-color-lightness:100%;
 
     --color-white: hsl(252, 30%, var(--white-color-lightness));
-    --color-light: hsl(252, 30%, var(--light-color-lightness));
+    --color-light: hsl(202, 30%, var(--light-color-lightness));
     --color-gray: hsl(252, 15%, 65%);
     --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
     --color-dark: hsl(252, 30%, var(--dark-color-lightness));
@@ -188,7 +188,7 @@
     }
     .btn-default:hover
     {
-      
+      cursor: pointer;
       animation-name: button-push;
       animation-duration: 0.3s;
       animation-timing-function: linear;
@@ -679,23 +679,19 @@
   flex: 0 0 33.33%;
   max-width: 33.33%;
 }
+.qps:nth-child(odd){
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+
+.qps:nth-child(even){
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
 
 
-.qps:nth-child(1)
-{
-  padding-right: 10px;
-  padding-left: 10px;
-}
-.qps:nth-child(2)
-{
-  padding-right: 10px;
-  padding-left: 10px;
-}
-.qps:nth-child(3)
-{
-  padding-right: 10px;
-  padding-left: 10px;
-}
 .qp-item
 {
   padding: var(--card-padding);
@@ -1346,20 +1342,20 @@
       .qps:nth-child(odd)
       {
         margin-top: 0;
-      }
-      .qps:nth-child(1)
-      {
-        padding-right: 15px;
-      }
-      .qps:nth-child(2)
-      {
+        margin-bottom: 0;
         padding-right: 15px;
         padding-left: 15px;
+        padding-bottom: 15px;
       }
-      .qps:nth-child(3)
+      .qps:nth-child(even)
       {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-right: 15px;
         padding-left: 15px;
+        padding-bottom: 15px;
       }
+      
       .customize-theme .card
       {
         width: 58vw;
