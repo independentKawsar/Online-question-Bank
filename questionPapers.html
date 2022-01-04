@@ -99,10 +99,11 @@
 <div class="pdf" id="qp">
         <section class="section pricing">
             <div class="container">
-                <h2 class="section-title padd-15"><span id="qpd">#</span></h2>
+                <h2 class="section-title padd-15"><span id="qpd">english 2013</span></h2>
                 
                 <iframe id="iframe" src="" width="100%" height="900px" allow="autoplay"></iframe>
-                <a id="dLink" href="" class="btn btn-default">Downlaod Now</a>
+                <a id="dView" class="btn btn-default">View Now</a>
+                <a id="dLink" target="_blank" rel="noopener noreferrer" href="" class="btn btn-default">Downlaod Now</a>
             </div>
         </section>
     </div>
@@ -335,10 +336,12 @@
         var url = JSON.parse(getUrl);
         var urlD="https://drive.google.com/file/d/"+url.key+"/preview";
         document.getElementById("qpd").innerHTML=url.pN
-        top.document.getElementById('iframe').setAttribute("src",urlD);
         var dLink="https://drive.google.com/u/0/uc?id="+url.key+"&export=download"
         top.document.getElementById('dLink').setAttribute("href",dLink);
-
+$('#dView').click(function(){
+                $('#iframe').show();
+                top.document.getElementById('iframe').setAttribute("src",urlD);
+            });
         console.log(url.pN);
 
 
@@ -347,12 +350,14 @@
     <script>
         var s = 0;
         $(document).ready(function(){ 
+            $('#iframe').hide();
             $('#sub-seba-x').hide();
             $('#seba-x-eng').hide();
             $('#sub-ncert-x').hide();
             $('#boardX').hide();
             $('#boardXII').hide();
             $('#xiisubjects').hide();
+            
             $('#classx').click(function(){
                 window.addEventListener("popstate",detectHistory);
                 s = 1;
