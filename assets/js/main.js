@@ -199,6 +199,7 @@ Bg1.addEventListener('click', () => {
   Bg3.classList.remove('active');
   // remove customized changes from local storage
   window.location.reload();
+  localStorage.setItem("mode",1)
 })
 Bg2.addEventListener('click', () => {
   darkColorLightness = '95%';
@@ -211,6 +212,7 @@ Bg2.addEventListener('click', () => {
   Bg1.classList.remove('active');
   Bg3.classList.remove('active');
   changeBG();
+  localStorage.setItem("mode",2)
 })
 Bg3.addEventListener('click', () => {
   darkColorLightness = '95%';
@@ -223,4 +225,38 @@ Bg3.addEventListener('click', () => {
   Bg2.classList.remove('active');
   Bg1.classList.remove('active');
   changeBG();
+  localStorage.setItem("mode",3)
 })
+
+var mode=localStorage.getItem("mode");
+if(mode==1){
+// add active class
+  Bg1.classList.add('active');
+  // remove active class from the others
+  Bg2.classList.remove('active');
+  Bg3.classList.remove('active');
+}
+if(mode==2){
+  darkColorLightness = '95%';
+  whiteColorLightness = '20%';
+  lightColorLightness = '15%';
+
+  // add active class
+  Bg2.classList.add('active');
+  // remove active class from the others
+  Bg1.classList.remove('active');
+  Bg3.classList.remove('active');
+  changeBG();
+}
+if(mode==3){
+  darkColorLightness = '95%';
+  whiteColorLightness = '10%';
+  lightColorLightness = '0%';
+
+  // add active class
+  Bg3.classList.add('active');
+  // remove active class from the others
+  Bg2.classList.remove('active');
+  Bg1.classList.remove('active');
+  changeBG();
+}

@@ -12,6 +12,7 @@
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo2.png">
 
     <title>Question Bank</title>
 </head>
@@ -21,7 +22,7 @@
         <!-- nav -->
         <nav class="nav container padd-15">
             <!-- nav logo -->
-            <a href="#" class="nav-logo">
+            <a href="index.html" class="nav-logo">
                 <h3><img src="assets/img/logo.png" width="40px" height="40px"  alt="Question Bnak logo"> Question bank</h3>
             </a>
             <!-- nav menu -->
@@ -227,7 +228,7 @@
                             <img src="assets/img/eng.png" width="70px" height="71px" background-position= "center center" alt="">
                             <h2 class="plan">English</h2>
                             
-                            <a class="btn btn-default" id="classx">Download Now</a>
+                            <a class="btn btn-default" id="eng-seba-x">Download Now</a>
                         </div>
                     </div>
                      <!-- subjects -->
@@ -279,6 +280,63 @@
                             <img src="assets/img/hindi.png" width="70px" height="71px" background-position= "center center" alt="">
                             <h2 class="plan">Hindi</h2>
                             <a href="#" class="btn btn-default">Downlaod Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section pricing" id="seba-x-eng">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">Select Board</h2>
+                <div class="row">
+                    <!-- subjects -->
+                    <div class="qps">
+                        <div class="qp-item">
+                            <h2 class="plan">2013</h2>
+                            <a href="questionPapers\sxeng13.html" target="_blank" rel="noopener noreferrer" class="btn btn-default" id="sxeng13">Download Now</a>
+                        </div>
+                    </div>
+                     <!-- subjects -->
+                     <div class="qps">
+                        <div class="qp-item">
+                            <h2 class="plan">2014</h2>
+                            <a href="questionPapers\sxeng14.html" target="_blank" rel="noopener noreferrer" class="btn btn-default">Downlaod Now</a>
+                        </div>
+                    </div>
+                    <!-- subjects --><div class="qps">
+                        <div class="qp-item">
+                             <h2 class="plan">2015</h2> <!--"1GqQHLpMkyIyvRhi4w7M4S_BBmpZiFb1o" -->
+                            <a class="btn btn-default" href="questionPapers.html?pN=Seba%20English%202013&key=1GqQHLpMkyIyvRhi4w7M4S_BBmpZiFb1o&cls=X" target="_blank" rel="noopener noreferrer">Downlaod Now</a>
+                        </div>
+                    </div>
+                    <!-- subjects -->
+                    <div class="qps">
+                        <div class="qp-item">
+                            <h2 class="plan">2016</h2>
+                            <a href="questionPapers\sxeng16.html" target="_blank" rel="noopener noreferrer" class="btn btn-default">Downlaod Now</a>
+                        </div>
+                    </div>
+                    <!-- subjects -->
+                    <div class="qps">
+                        <div class="qp-item">
+                            <h2 class="plan">2017</h2>
+                            <a href="questionPapers\sxeng17.html" target="_blank" rel="noopener noreferrer" class="btn btn-default">Downlaod Now</a>
+                        </div>
+                    </div>
+                    <!-- subjects -->
+                    <div class="qps">
+                        <div class="qp-item">
+                            <h2 class="plan">2018</h2>
+                            <a href="questionPapers\sxeng18.html" target="_blank" rel="noopener noreferrer" class="btn btn-default">Downlaod Now</a>
+                        </div>
+                    </div>
+                     <!-- subjects -->
+                    <div class="qps">
+                        <div class="qp-item">
+                            <h2 class="plan">2019</h2>
+                            <a href="questionPapers\sxeng19.html" target="_blank" rel="noopener noreferrer" class="btn btn-default">Downlaod Now</a>
                         </div>
                     </div>
                 </div>
@@ -349,6 +407,8 @@
                 </div>
             </div>
         </section>
+
+
     </div>
         <!--End of Download section-->
       
@@ -559,96 +619,204 @@
 
     <!--=============== jQuery ===============-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <script>
-        var s = 0;
+        function passValue(urlPassed, qpd){
+            localStorage.setItem("url",urlPassed);
+            localStorage.setItem("qpdetails",qpd);
+            return false;
+        }
+    </script>
+    <script>
         $(document).ready(function(){
-            $('#sub-seba-x').hide();
-            $('#sub-ncert-x').hide();
-            $('#boardX').hide();
-            $('#boardXII').hide();
-            $('#xiisubjects').hide();
-            $('#classx').click(function(){
-                window.addEventListener("popstate",detectHistory);
+            var s = 0;
+        
+    //         $('#sub-seba-x').hide();
+    // $('#seba-x-eng').hide();
+    // $('#sub-ncert-x').hide();
+    // $('#boardX').hide();
+    // $('#boardXII').hide();
+    // $('#xiisubjects').hide();
+        $('#classx').click(function(){
                 s = 1;
                 $('#download').hide();
                 $('#boardX').show();
                 $('#boardXII').hide();
-                window.history.pushState({id:1}, null, "?q=431&u=selectBoard");
+                window.history.pushState({id:1}, null, "?id=431&u=selectBoard");
+                console.log(s);
                 
                 
             });
 
             $('#sebaX').click(function(){
-                    s=2;
-                window.addEventListener("popstate",detectHistory);
-                $('#boardX').hide();
+                s=2;
                 $('#sub-seba-x').show();
-                window.history.pushState({id:1}, null, "?q=433&u=selectSebaSubjects");
+                $('#seba-x-eng').hide();
+                $('#sub-ncert-x').hide();
+                $('#boardX').hide();
+                $('#boardXII').hide();
+                $('#download').hide();
+                $('#xiisubjects').hide();
+                window.history.pushState({id:1}, null, "?id=433&u=selectSebaSubjects");
+                console.log(s);
                 });
 
+                $('#eng-seba-x').click(function(){
+                    s=3;
+                $('#seba-x-eng').show();
+                $('#sub-seba-x').hide();
+                window.history.pushState({id:1}, null, "?id=434&u=selectYear");
+                console.log(s);
+                });
+
+                
                 $('#ncertX').click(function(){
                     s=2;
-                window.addEventListener("popstate",detectHistory);
                 $('#boardX').hide();
                 $('#sub-ncert-x').show();
-                window.history.pushState({id:1}, null, "?q=433&u=selectNcertSubjects");
+                window.history.pushState({id:1}, null, "?id=433&u=selectNcertSubjects");
+                console.log(s);
                 });    
 
             $('#classxii').click(function(){
                 s = 1;
-                window.addEventListener("popstate",detectHistory);
                 $('#download').hide();
                 $('#boardX').hide();
                 $('#boardXII').show();
-                window.history.pushState({id:1}, null, "?q=432&u=selectBoard");
+                window.history.pushState({id:1}, null, "?id=432&u=selectBoard");
+                console.log(s);
                 
             });
 
-            
+var getUrl = window.location.search.slice(1);
 
-            // $('#classxii').click(function(){
-            //     $('#download').hide();
-            //     $('#boardX').hide();
-            //     $('#boardXII').show();
-            //     window.history.pushState({id:1}, null, "?q=432&u=selectBoard");
-            // });
+getUrl = getUrl.replace(/=/g, '":"');
+getUrl = getUrl.replace(/&/g, '","');
+// getUrl = getUrl.replace(/%20/g, ' ');
+getUrl = '{"'+getUrl+'"}';
+var url = JSON.parse(getUrl);
+var id = url.id;
+var text = url.u;
+console.log(id);
 
-            // $('#classxii').click(function(){
-            //     $('#download').hide();
-            //     $('#boardX').hide();
-            //     $('#boardXII').show();
-            //     window.history.pushState({id:1}, null, "?q=432&u=selectBoard");
-            // });
+if(id==431){
+    
+    s = 1;  
+    $('#sub-seba-x').hide();
+    $('#seba-x-eng').hide();
+    $('#sub-ncert-x').hide();
+    $('#boardX').show();
+    $('#boardXII').hide();
+    $('#download').hide();
+    $('#xiisubjects').hide();
+    console.log(s);
+}
+if(id==433){
+    s=2;
+    $('#sub-seba-x').show();
+    $('#seba-x-eng').hide();
+    $('#sub-ncert-x').hide();
+    $('#boardX').hide();
+    $('#boardXII').hide();
+    $('#download').hide();
+    $('#xiisubjects').hide();
+}
+if(id==0){
+     
+    $('#sub-seba-x').hide();
+    $('#seba-x-eng').hide();
+    $('#sub-ncert-x').hide();
+    $('#boardX').hide();
+    $('#boardXII').hide();
+    
+    $('#download').show();
+    $('#xiisubjects').hide();
+}
 
-            // $('#classxii').click(function(){
-            //     $('#download').hide();
-            //     $('#boardX').hide();
-            //     $('#boardXII').show();
-            //     window.history.pushState({id:1}, null, "?q=432&u=selectBoard");
-            // });
+        
         });
 
-        function detectHistory(){
-            
-                if(s==1){
-                    $('#download').show();
+        $(window).on('popstate', function() {
+      
+            var getUrl = window.location.search.slice(1);
+
+            getUrl = getUrl.replace(/=/g, '":"');
+            getUrl = getUrl.replace(/&/g, '","');
+            // getUrl = getUrl.replace(/%20/g, ' ');
+            getUrl = '{"'+getUrl+'"}';
+            var url = JSON.parse(getUrl);
+            var id = url.id;
+            var text = url.u;
+            console.log(id);
+
+            if(id==431){
+                
+                s = 1;  
+                $('#sub-seba-x').hide();
+                $('#seba-x-eng').hide();
+                $('#sub-ncert-x').hide();
+                $('#boardX').show();
+                $('#boardXII').hide();
+                $('#download').hide();
+                $('#xiisubjects').hide();
+                console.log(s);
+            }
+            if(id==433){
+                s=2;
+                $('#sub-seba-x').show();
+                $('#seba-x-eng').hide();
+                $('#sub-ncert-x').hide();
                 $('#boardX').hide();
                 $('#boardXII').hide();
+                $('#download').hide();
+                $('#xiisubjects').hide();
+            }
+            if(id==0){
+                
                 $('#sub-seba-x').hide();
-                s=0;
+                $('#seba-x-eng').hide();
+                $('#sub-ncert-x').hide();
+                $('#boardX').hide();
+                $('#boardXII').hide();
+                $('#download').show();
+                $('#xiisubjects').hide();
             }
-            if(s==2){
-            $('#download').hide();
-            $('#boardX').show();
-            $('#boardXII').hide();
-            $('#sub-seba-x').hide();
-            $('#sub-ncert-x').hide();
-            s=1;
-            }
-        }
+
+           
+    });
+
+        // function detectHistory(){
+            
+        //     if(s==1){
+        //     $('#download').show();
+        //     $('#boardX').hide();
+        //     $('#boardXII').hide();
+        //     $('#sub-seba-x').hide();
+        //     s=0;
+        //     }
+        //     if(s==2){
+        //     $('#download').hide();
+        //     $('#boardX').show();
+        //     $('#boardXII').hide();
+        //     $('#sub-seba-x').hide();
+        //     $('#sub-ncert-x').hide();
+        //     s=1;
+        //     }
+        //     if(s==3){
+        //     $('#seba-x-eng').hide();
+        //     $('#sub-seba-x').show();
+        //     s=2;
+        //     }
+        // }
         
     </script>
+
+<script>
+    
+
+    
+
+
+</script>
 
 
     <!--=============== SWIPER JS ===============-->
