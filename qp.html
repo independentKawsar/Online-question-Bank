@@ -686,6 +686,19 @@
                 console.log(s);
                 
             });
+            
+            var currentUrl = window.location.href;
+            if(currentUrl=="https://onlinequestionbank.in/qp.html"){
+                $('#sub-seba-x').hide();
+                $('#seba-x-eng').hide();
+                $('#sub-ncert-x').hide();
+                $('#boardX').hide();
+                $('#boardXII').hide();
+                window.history.pushState({id:1}, null, "?id=0&u=0");
+                
+                $('#download').show();
+                $('#xiisubjects').hide();
+            }
 
 var getUrl = window.location.search.slice(1);
 
